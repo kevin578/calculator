@@ -2,9 +2,10 @@
 	border: 1px solid black;
 	width: 400px;
 	height: 550px;
-	background: grey;
+	background: #012935;
 	margin: auto;
 	margin-top: 40px;
+	border-radius: 5px;
 }
 
 #screen {
@@ -18,7 +19,6 @@
 #numbers {
 	width: 360px;
 	height: 400px;
-	background: white;
 	margin-left: 20px;
 	margin-top: 20px;
 }
@@ -33,4 +33,14 @@
 	margin-top: 15px;
 	margin-left: 15px;
 	float: left;
+	background: #cccccc;
+}
+
+#equals {
+	width: 155px;
+	background: #e09f50;
+}
+
+#times, #plus, #minus, #divided {
+	background: #509ae0;
 }
