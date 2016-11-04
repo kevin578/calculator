@@ -1,0 +1,36 @@
+#calculator {
+	border: 1px solid black;
+	width: 400px;
+	height: 550px;
+	background: grey;
+	margin: auto;
+	margin-top: 40px;
+}
+
+#screen {
+	width: 360px;
+	height: 75px;
+	background: white;
+	margin: auto;
+	margin-top: 30px;
+}
+
+#numbers {
+	width: 360px;
+	height: 400px;
+	background: white;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.key {
+	width: 70px;
+	height: 70px;
+	border: 1px solid black;
+	font-size: 30px;
+	text-align: center;
+	line-height: 70px;
+	margin-top: 15px;
+	margin-left: 15px;
+	float: left;
+}
