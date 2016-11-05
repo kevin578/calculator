@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Cuprum');
+
 #calculator {
 	border: 1px solid black;
 	width: 400px;
@@ -14,6 +16,14 @@
 	background: white;
 	margin: auto;
 	margin-top: 30px;
+	font-family: 'Cuprum', sans-serif;
+}
+
+#screen p {
+	margin-right: 15px;
+	text-align: right;
+	font-size: 40px;
+	line-height: 80px;
 }
 
 #numbers {
@@ -37,8 +47,11 @@
 }
 
 #equals {
-	width: 155px;
-	background: #e09f50;
+	background: #49d85c;
+}
+
+#clear {
+	background: #d84949;
 }
 
 #times, #plus, #minus, #divided {
