@@ -3,6 +3,8 @@ window.onload = function() {
 //declare variables
 var number1 = 0;
 var screen_number = 0;
+var operator;
+
 
 //display inital value of 0
 render();
@@ -34,11 +36,27 @@ document.getElementById("clear").addEventListener("click", function() {
 
 //adds two numbers together
 document.getElementById("plus").addEventListener("click", function() {
-	number1 = screen_number;
-	render();
-	screen_number = 0;
 	
+	operator = plus;
+	number1 = screen_number;
+	screen_number = 0;	
 });
+
+
+//equals buttons
+document.getElementById("equals").addEventListener("click", function(){
+	screen_number = operator(number1, screen_number);
+	render();
+});
+
+//operator functions
+
+var plus = function(num1, num2) {
+	result = parseInt(num1) + parseInt(num2);
+	return result;
+}
+
+
 
 
 //displays the number
