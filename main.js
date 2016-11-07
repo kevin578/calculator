@@ -34,12 +34,19 @@ document.getElementById("clear").addEventListener("click", function() {
 	render();
 });
 
-//adds two numbers together
-document.getElementById("plus").addEventListener("click", function() {
-	
-	operator = plus;
-	number1 = screen_number;
-	screen_number = 0;	
+//adds, subtracts, multiplies, or divides values when 
+
+ document.getElementById("plus").addEventListener("click", function() {
+ 	setOperator(plus);
+});
+ document.getElementById("minus").addEventListener("click", function() {
+ 	setOperator(minus);
+});
+ document.getElementById("times").addEventListener("click", function() {
+ 	setOperator(times);
+});
+ document.getElementById("divide").addEventListener("click", function() {
+ 	setOperator(divide);
 });
 
 
@@ -49,14 +56,15 @@ document.getElementById("equals").addEventListener("click", function(){
 	render();
 });
 
-//operator functions
 
-var plus = function(num1, num2) {
-	result = parseInt(num1) + parseInt(num2);
-	return result;
+
+//Functions
+
+function setOperator(oper) {
+	operator = oper;
+	number1 = screen_number;
+	screen_number = 0;	
 }
-
-
 
 
 //displays the number
@@ -64,6 +72,27 @@ function render() {
 document.getElementById("screen").getElementsByTagName("p")[0].innerHTML = screen_number;
 }
 
+//operator functions
+
+var plus = function(num1, num2) {
+	result = parseInt(num1) + parseInt(num2);
+	return result;
+}
+
+var minus = function(num1, num2) {
+	result = parseInt(num1) - parseInt(num2);
+	return result;
+}
+
+var times = function(num1, num2) {
+	result = parseInt(num1) * parseInt(num2);
+	return result;
+}
+
+var divide = function(num1, num2) {
+	result = parseInt(num1) / parseInt(num2);
+	return result;
+}
 
 
 }
